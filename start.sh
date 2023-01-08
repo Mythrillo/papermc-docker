@@ -95,6 +95,10 @@ if ! [[ -z $MC_OP_UUID || -z $MC_OP_USER ]]; then
     printlog "[*] done."
 fi
 
+# Agree to eula
+printlog "[>] Creating eula.txt"
+echo 'eula=true' > eula.txt
+
 # check if backup data exist
 printlog "[>] Backup config"
 for data in "${backupFiles[@]}"
