@@ -82,7 +82,7 @@ RUN apk add openjdk17 bash vim
 RUN mkdir plugins world world_nether world_the_end
 
 
-EXPOSE ${server_port} ${query_port} ${rcon_port} ${dynmap_port}}
+EXPOSE ${server_port} ${query_port} ${rcon_port} ${dynmap_port}
 
 
 ENTRYPOINT ["bash", "start.sh"]
